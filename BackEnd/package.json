@@ -2,11 +2,15 @@
   "name": "my-node-app",
   "version": "1.0.0",
   "scripts": {
-    "start": "node server.js",
-    "serve-node": "node server.js" 
+  "start": "node ./Server",
+   "build": "babel . -d dist --ignore node_modules,dist"
   },
+  
   "type": "module",
   "dependencies": {
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
     "axios": "^1.6.8",
     "axios-mock-adapter": "^1.22.0",
     "body-parser": "^1.20.2",
@@ -16,7 +20,9 @@
     "firebase": "^10.9.0",
     "nodemailer": "^6.9.14",
     "open": "^9.0.0",
+    "path-browserify": "^1.0.1",
     "qrcode": "^1.5.3",
+    "react-native-web": "^0.19.12",
     "yahoo-finance2": "^2.11.3"
   }
 }
