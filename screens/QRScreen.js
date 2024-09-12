@@ -35,7 +35,7 @@ export default function QRScreen() {
     }
 
     try {
-      const response = await axios.post('http://localhost:3000/send-email', {
+      const response = await axios.post('http://localhost:3002/send-email', {
         to: email,
         subject: 'Your Generated QR Code',
         text: `Here is your QR Code for: ${qrValue}\n\nThe QR code contains: ${userText}`,

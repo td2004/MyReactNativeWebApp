@@ -16,7 +16,7 @@ const AboutScreen = () => {
       }
   
       try {
-        const response = await axios.post('http://localhost:3000/send-emailform', {
+        const response = await axios.post('http://localhost:3002/send-emailform', {
           to: email,
           subject: "Contact Me Email",
           text: message
@@ -30,7 +30,7 @@ const AboutScreen = () => {
         Alert.alert('Error sending email', error.message);
       }
       try {
-        const response = await axios.post('http://localhost:3000/save', {
+        const response = await axios.post('http://localhost:3002/save', {
           name,
           email,
           message

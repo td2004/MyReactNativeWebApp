@@ -8,7 +8,7 @@ const StockData = () => {
   useEffect(() => {
     const fetchStockData = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/top-stocks');
+        const response = await fetch('http://localhost:3002/api/top-stocks');
         const data = await response.json();
         setStockData(data);
         setLoading(false);
