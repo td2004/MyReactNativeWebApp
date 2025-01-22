@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
   "start": "node ./Server",
-   "build": "babel . -d dist --ignore node_modules,dist"
+   "build": "webpack --config webpack.config.js"
   },
   
   "type": "module",
